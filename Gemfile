@@ -3,21 +3,26 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+gem 'pg'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  # Uncomment these lines on Linux.
+  gem 'libnotify'
 end
 
 group :production do
   # Use PostgreSQL as the database for Active Record
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
 end
 
