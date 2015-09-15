@@ -56,6 +56,9 @@ RSpec.configure do |config|
   # 2015.07.04 add Capybara
   config.include Capybara::DSL
 
+  # 2015.08.13 add routes.url_helpers
+  config.include Rails.application.routes.url_helpers
+
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
